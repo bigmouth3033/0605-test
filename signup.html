@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="./js.js"></script>
+	</head>
+	<body>
+    <header>
+      <img src="./image/logo.jpg" alt="">
+      <span>Amazing Bridges</span>
+    </header>
+
+    <ul>
+      <li><a href="./index.html">HOME</a></li>
+      <li>WORLD BRIDES</li>
+      <li>TOP LONGEST</li>
+      <li>TOP HIGHEST</li>
+      <li><a href="./signup.html">CONTACT</a></li>
+    </ul>
+
+  <hr>
+  <p>Contact us</p>
+  <form action="./result.html">
+    <fieldset>
+      <legend>Your Details</legend>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name"><span>*</span>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email"><span>*</span>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Your Review:</legend>
+      <div>
+        <label for="select">How did you hear about us?</label>
+        <select name="select" id="select">
+          <option value="Google">Google</option>
+          <option value="Friend">Friend</option>
+          <option value="Advert">Advert</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="">Would you like to visit again</label>
+        <input type="radio" name="visit" id="yesradio" value="Yes" checked>
+        <label for="yesradio">Yes</label>
+        <input type="radio" name="visit" id="noradio" value="No">
+        <label for="noradio">No</label>
+        <input type="radio" name="visit" id="mayberadio" value="Maybe">
+        <label for="mayberadio">Maybe</label>
+      </div>
+
+      <div class="comment">
+        <label for="">Comment</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+      </div>
+
+      <div>
+        <input type="checkbox" name="check" id="check">
+        <label for="">Sign me up for email updates</label>
+      </div>
+
+      <div>
+        <button id="submitbutton" onclick="return checkSignup()">Submit review</button>
+        <button type="reset">Reset</button>
+      </div>
+    </fieldset>
+  </form>
+</html>
